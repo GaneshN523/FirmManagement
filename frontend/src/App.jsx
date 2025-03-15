@@ -9,11 +9,11 @@ import LaboratoryDash from "./pages/laboratory/Laboratory";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/FirmManagement">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/departments" element={<Department />} />
-        <Route path="/workers" element={<Workers />} />  {/* ✅ Added missing route */}
+        <Route path="/workers" element={<Workers />} />
         <Route path="/machinery" element={<Machinery />} />
         <Route path="/accounts" element={<Accounts />} />
         <Route path="/laboratory" element={<LaboratoryDash />} />
