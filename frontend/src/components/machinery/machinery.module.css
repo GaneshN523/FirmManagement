@@ -1,0 +1,180 @@
+/* Machinery Dashboard Styling */
+.machinery-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+    width: calc(100vw - 270px);
+    margin-left: 150px;
+}
+
+.main-content {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Add Machine Button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Machine Form Styling */
+.machine-form-overlay {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.machine-form-overlay h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.machine-form-overlay label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin: 10px 0 5px;
+    align-self: flex-start;
+}
+
+.machine-form-overlay input,
+.machine-form-overlay select {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+.machine-form-overlay input:focus,
+.machine-form-overlay select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Machine List */
+.machine-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.machine-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.machine-card:hover {
+    transform: scale(1.02);
+}
+
+.machine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.machine-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.machine-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Action Buttons */
+.machine-card button {
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 5px;
+}
+
+.machine-card button:first-child {
+    background-color: #078fff;
+    color: black;
+}
+
+.machine-card button:first-child:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.machine-card button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.machine-card button:last-child:hover {
+    background-color: #a71d2a;
+    transform: scale(1.05);
+}

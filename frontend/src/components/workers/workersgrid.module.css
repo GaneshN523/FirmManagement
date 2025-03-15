@@ -1,0 +1,179 @@
+/* General Container */
+.componentContainer {
+    width: 80%;
+    margin: auto;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 228px;
+  }
+  
+  /* Header */
+  .componentContainer h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  /* Add Worker Button */
+  .addWorkerBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .addWorkerBtn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Workers Grid */
+  .workersgrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Table */
+  .workersTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table Headers */
+  .workersTable th {
+    text-align: left;
+    font-size: 18px;
+    padding: 12px;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  /* Table Rows */
+  .workersTable tr {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Table Cells */
+  .workersTable td {
+    flex: 1;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .workersTable tbody tr {
+    background-color: #f9f9f9; /* Light background for each row */
+    transition: background-color 0.3s ease 0.2s, 
+                transform 0.2s ease 0.2s, 
+                box-shadow 0.3s ease 0.2s;
+    border-radius: 8px; /* Make it look like a widget */
+    padding: 10px; /* Space inside the row */
+    display: flex; /* Align items properly */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add spacing between rows */
+    cursor: pointer;
+  }
+  
+  /* Hover Effect with Delay */
+  .workersTable tbody tr:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+
+  /* Delete Button */
+  .deleteBtn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .deleteBtn:hover {
+    background-color: #e63939;
+  }
+  
+  /* Modal Overlay */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal Inputs */
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Modal Buttons */
+  .modalActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .cancelBtn {
+    background-color: #777;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .cancelBtn:hover {
+    background-color: #666;
+  }
+  
+  .confirmBtn {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .confirmBtn:hover {
+    background-color: #0056b3;
+  }
+  

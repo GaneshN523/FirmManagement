@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif; /* Modern typography */
+  background-color: #f8f9fb; /* Light background for contrast */
+  color: #333;
+}
+
+/* Container styles */
+.dashboardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(100% - 270px); /* Start from the right of the left sidebar */
+  min-height: calc(100vh - 60px); /* Adjust height considering navbar */
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -70px;
+}
+
+/* Main Title */
+.mainTitle {
+  color: #2a2a2a;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 220px;
+}
+
+/* Main content area */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+/* Panel styles */
+.panel {
+  width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease-in-out;
+  margin-left: 220px;
+}
+
+.panel:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Panel Title */
+.panelTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.panel li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #444;
+}
+
+.panel li span {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Dropdown and Buttons */
+.dropdown, .actionButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown:hover, .actionButton:hover {
+  background: #e0eaff;
+  border-color: #5171ff;
+}
+
+/* Report List */
+.reportList, .alertList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.reportItem, .alertItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.reportItem:hover, .alertItem:hover {
+  background: #eef3ff;
+  transform: scale(1.02);
+}
+
+/* Right Sidebar */
+.rightSidebar {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  width: 270px;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f9f9f9, #eaf0ff);
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
+
+/* Calculator */
+.calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calcDisplay {
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  text-align: right;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.calcButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.calcButtons button {
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background: #f1f1f1;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.calcButtons button:hover {
+  background: #5171ff;
+  color: white;
+}
+
+.clearBtn {
+  grid-column: span 4;
+  background: #ff5555;
+  color: white;
+}

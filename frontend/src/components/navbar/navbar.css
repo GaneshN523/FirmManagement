@@ -1,0 +1,90 @@
+.navbar {
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0; /* Aligns it to the top */
+    left: 250px; /* Starts from the right of the sidebar (adjust based on sidebar width) */
+    width: calc(100% - 250px); /* Takes the remaining width of the page */
+    height: 50px;
+    background-color: white; /* Ensures visibility */
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    z-index: 5000; /* Ensures it stays above other elements */
+}
+
+.navbar .wrapper {
+    width: 100%;
+    padding: 0 20px; /* Adjust padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .wrapper .search {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    padding: 3px;
+}
+
+.navbar .wrapper .search input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.navbar .wrapper .search input::placeholder {
+    font-size: 12px;
+}
+
+.navbar .wrapper .items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .wrapper .items .item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.navbar .wrapper .items .item .icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.navbar .wrapper .items .item .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar .wrapper .items .item .counter {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* Push main content down to avoid overlap */
+.main-content {
+    margin-top: 50px; /* Adjust based on navbar height */
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px;
+}

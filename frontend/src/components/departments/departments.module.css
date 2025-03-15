@@ -1,0 +1,241 @@
+.departmentManager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+    width: calc(100vw - 270px);
+    margin-left: 150px;
+}
+
+/* Button Styling */
+.deptAdd {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 25px;
+}
+
+.deptAdd:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.inputField {
+    width: 85%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+.inputField:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Additional Fields */
+.additionalFieldContainer {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 10px;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.deleteButton:hover {
+    background-color: #a71d2a;
+    transform: scale(1.05);
+}
+
+/* Action Buttons */
+.addButton,
+.saveButton,
+.cancelButton {
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 5px;
+}
+
+.addButton,
+.saveButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.addButton:hover,
+.saveButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.cancelButton {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancelButton:hover {
+    background-color: #565e64;
+    transform: scale(1.05);
+}
+
+/* Grid Layout */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+/* Grid Item Styling */
+.gridItem {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Dynamic height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gridItem:hover {
+    transform: scale(1.02);
+}
+
+/* Header with Buttons */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling for Headings */
+.gridItem h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+
+}
+
+.gridItem h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 15px;
+}
+
+/* Department Info Sections */
+.gridItem p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Last paragraph should not have a bottom border */
+
+
+/* Additional Fields - List Style */
+.gridItem ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.gridItem ul li {
+    font-size: 14px;
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Buttons */
+.editButton {
+    background-color: #078fff;
+    color: black;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 5px;
+}
+
+.editButton:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.deleteButton:hover {
+    background-color: #a71d2a;
+    transform: scale(1.05);
+}
+
+
+
+.gridContainer > :nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+}

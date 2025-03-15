@@ -1,0 +1,253 @@
+/* Laboratory Dashboard Styles */
+.dashboardContainer {
+    position: relative;
+    margin-left: 270px; /* Adjust for sidebar */
+    padding: 20px;
+    background: #f4f4f4;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .mainHeader {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Overview Panel */
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .overviewCard {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .overviewCard h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .overviewValue {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 8px;
+  }
+  
+  /* Processing Stages */
+  .stagesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .stageCard {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stageTitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .stageDetails {
+    margin-top: 10px;
+  }
+  
+  .progressBar {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Report Form - Overlay */
+ /* Report Form - Overlay */
+.reportForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Prevent overflow inside the form */
+.reportForm .formContent {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+    max-height: 100%;
+}
+
+/* Ensure inputs, tables, and buttons fit well */
+.repoInput {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.repoTable {
+    margin-top: 15px;
+    overflow-x: auto; /* Ensures table doesn't break layout */
+}
+
+.repoTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.repoTable th, .repoTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.repoBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Prevent buttons from breaking layout */
+.formButton {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.formButton:hover {
+    background: #0056b3;
+}
+
+  
+  /* Reports & Insights */
+  .reports {
+    margin-top: 30px;
+  }
+  
+  .reportTabs button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  .reportTabs .active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .reportContent {
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reportContent ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reportContent li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Modal */
+  /* Modal Overlay */
+/* Modal Overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+/* Modal Content */
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align elements to the left */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-height: 80vh; /* Prevents overflow */
+    overflow-y: auto; /* Adds scrollbar if content exceeds height */
+}
+
+/* Report Details & Parameters List */
+.reportDetails,
+.parameterList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reportDetails li,
+.parameterList li {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ddd; /* Bottom border for clear separation */
+}
+
+/* Headings */
+.modalContent h3, 
+.modalContent h4 {
+    margin-bottom: 10px;
+}
+
+/* Close Button */
+.closeBtn {
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; /* Align to the right */
+    margin-top: 15px;
+}

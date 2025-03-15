@@ -1,0 +1,115 @@
+.sidebar {
+  position: fixed; /* Keeps it fixed on the left */
+  left: 0; /* Aligns to the left */
+  top: 0; /* Starts from the top of the page */
+  width: 250px; /* Adjust width as needed */
+  height: 100vh; /* Full viewport height */
+  background-color: white;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000; /* Ensures it's above other elements */
+}
+
+.sidebar .top {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.sidebar .top .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6439ff;
+}
+
+.sidebar hr {
+  height: 0;
+  border: 0.5px solid rgb(230, 227, 227);
+  margin: 5px 0;
+}
+
+.sidebar .center {
+  flex: 1;
+  padding-left: 10px;
+  overflow-y: auto;
+}
+
+.sidebar .center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .center ul .title {
+  font-size: 10px;
+  font-weight: bold;
+  color: #999;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.sidebar .center ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.sidebar .center ul li:hover {
+  background-color: #ece8ff;
+}
+
+.sidebar .center ul li .icon {
+  font-size: 18px;
+  color: #7451f8;
+  margin-right: 10px;
+}
+
+.sidebar .center ul li span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.sidebar .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.sidebar .bottom .colorOption {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #7451f8;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sidebar .bottom .colorOption:hover {
+  transform: scale(1.1);
+}
+
+.sidebar .bottom .colorOption:nth-child(1) {
+  background-color: whitesmoke;
+}
+
+.sidebar .bottom .colorOption:nth-child(2) {
+  background-color: #333;
+}
+
+/* Push the rest of the content to the right */
+.main-content {
+  margin-left: 250px; /* Adjust based on sidebar width */
+  padding: 20px;
+}

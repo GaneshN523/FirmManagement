@@ -1,0 +1,77 @@
+.factoryDashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    width: calc(100vw - 380px);
+    margin-left: 220px;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 12px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -50px;
+    margin-top: -50px;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Grid Layout */
+.smallChartsRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.bigChartsRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Chart Styling */
+.smallChart,
+.bigChart {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 240px;
+    transition: all 0.3s ease-in-out;
+}
+
+.smallChart:hover,
+.bigChart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Chart Title */
+.chartTitle {
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
