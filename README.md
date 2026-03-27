@@ -2,7 +2,7 @@
 
 FirmManagement is a comprehensive management system designed for firms, factories, and companies to streamline operations from a single centralized dashboard. It leverages **FastAPI** for the backend, **PostgreSQL** as the database, and **React (Vite.js)** for a modern and high-performance frontend.
 
-## 🚀 Features
+## Features
 - User authentication and role-based access control
 - Dashboard for monitoring firm operations
 - Employee and resource management
@@ -10,14 +10,14 @@ FirmManagement is a comprehensive management system designed for firms, factorie
 - Real-time data analytics
 - Scalable and modular architecture
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Backend:** FastAPI (Python)
 - **Database:** PostgreSQL
 - **Frontend:** React with Vite.js
 - **Deployment:** Docker, AWS/Heroku (optional)
 
 ---
-## 📌 Installation & Setup
+## Installation & Setup
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.8+
@@ -26,7 +26,7 @@ Ensure you have the following installed:
 - Docker (optional)
 
 ### Steps to Run the Project
-#### 1️⃣ Backend (FastAPI)
+#### Backend (FastAPI)
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/firm-management.git
@@ -46,7 +46,7 @@ Ensure you have the following installed:
    uvicorn main:app --reload
    ```
 
-#### 2️⃣ Frontend (React + Vite.js)
+#### Frontend (React + Vite.js)
 1. Navigate to the frontend folder:
    ```sh
    cd ../frontend
@@ -61,7 +61,7 @@ Ensure you have the following installed:
    ```
 
 ---
-## 📤 Deploying to GitHub
+## Deploying to GitHub
 To push this project to GitHub, follow these steps:
 
 1. **Initialize Git in your project folder**
@@ -87,7 +87,7 @@ To push this project to GitHub, follow these steps:
    ```
 
 ---
-## 📢 Contributing
+## Contributing
 Feel free to contribute by submitting pull requests or reporting issues.
 
 
